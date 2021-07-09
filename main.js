@@ -43,10 +43,76 @@ console.clear()
 
 let FavoriteFood = " big tasty"
 console.log (FavoriteFood);
-const updateFavoriteFood=function(){
+const updateFavoriteFood=function(newValue){
 
-    let FavoriteFood = "pizza"
+    let FavoriteFood = newValue
 
     return (FavoriteFood);
+}
+
+//Q5
+/*
+Use the following closure function to create two separate counters
+
+const createCounter = function () {
+  let counter = 0;
+
+  // this anonymous function is a closure function that has access to its own closure variable
+  return function () {
+    return ++counter;
+  };
+};
+*/
+const createCounter = function(){
+
+let counter =0;
+
+const createCounter2= function(){
+
+if(counter <0){
+  let counter = 1;
+console.log ( counter)
+
+}else{
+  return ++counter;
+
+}
+
+}
+
+return createCounter2()
+
+
+}
+
+//Q4
+/*
+Modify createCounter to take a parameter that represents the starting point for the counter
+
+// instead of counting from zero it will take count from the value provided
+const createCounter = function (start) {
+  // TODO: Your code here
+};
+
+*/
+
+
+const createCounter4 = function (start){
+let counter = 0
+const createCounter5 = function (){
+
+if (counter === 0){
+
+  let counter= start;
+  return ++counter;
+
+}else{
+
+  console.log ("error")
+}
+
+
+}
+return  createCounter5()
 }
 
