@@ -116,6 +116,3 @@ if (counter === 0){
 return  createCounter5()
 }
 
-/*gsjgjggjffgjdfdjgfjfggjjggjdgjdjdffgjfdfgj
-sgksddgkggk
-gdfkgdfkggkffggkfgg
