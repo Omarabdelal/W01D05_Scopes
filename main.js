@@ -45,12 +45,12 @@ let FavoriteFood = " big tasty"
 console.log (FavoriteFood);
 const updateFavoriteFood=function(newValue){
 
-    let FavoriteFood = newValue
+     FavoriteFood = newValue
 
-    return (FavoriteFood);
+  
 }
 
-//Q5
+//Q53
 /*
 Use the following closure function to create two separate counters
 
@@ -67,23 +67,21 @@ const createCounter = function(){
 
 let counter =0;
 
-const createCounter2= function(){
 
-if(counter <0){
-  let counter = 1;
-console.log ( counter)
 
-}else{
+return  function(){
+
+
   return ++counter;
 
 }
+return ++counter;
 
 }
+const cuntw2 =  createCounter()
 
-return createCounter2()
 
 
-}
 
 //Q4
 /*
@@ -95,24 +93,129 @@ const createCounter = function (start) {
 };
 
 */
+const createCounte2 = function (start){
+let counter =start
 
-
-const createCounter4 = function (start){
-let counter = 0
-const createCounter5 = function (){
-
-if (counter === 0){
-
-  let counter= start;
-  return ++counter;
-
-}else{
-
-  console.log ("error")
-}
+const createCounte3 = function (){
+  
 
 
 }
-return  createCounter5()
+return function(){
+  return ++counter
+}
+return ++counter
+
+}
+
+const count6 =createCounte2(6);
+ 
+// p
+//Q1
+/*
+Predict the value of the following variables and explain why.
+
+let age = 25;
+if (true) {
+  age = 30;
+}
+age; // ?  == 30
+
+const myName = "John";
+if (true) {
+  const myName = "Jane";
+}
+myName; // ?
+*/
+let age = 25;
+if (true) {
+  age = 30;}
+  console.log (age)
+
+  const myName = "John";
+if (true) {
+  const myName = "Jane";}
+  console.log ( myName)
+//Q2 
+/*
+Predict the value of the following function invocations.
+
+let number = 10;
+const func1 = function () {
+  let number = 15;
+
+  if (true) {
+    let number = 24;
+  }
+
+  return number;
+};
+
+func1(); // 15
+
+const func2 = function (age) {
+  age = 10;
+  if (true) {
+    let age = 24;
+    age = 20;
+  }
+
+  return age;
+};
+
+func2(26); // ?
+
+
+
+*/
+
+let number = 10;
+const func1 = function () {
+  let number = 15;
+
+  if (true) {
+    let number = 24;
+  }
+
+  return number;
+};
+const func2 = function (age) {
+  age = 10;
+  if (true) {
+    let age = 24;
+    age = 20;
+  }
+
+  return age;
+};
+//Q3
+/*
+Write a function countDown that returns a number representing a count down value. With each invocation the number should be lower by one and at zero it will no longer decrement and instead it will return "count down is over".
+
+const countDown = function () {
+  // TODO: Your code here
+};
+
+countDown(); // => 4
+countDown(); // => 3
+countDown(); // => 2
+countDown(); // => 1
+countDown(); // => 0
+countDown(); // => "count down is over"*/
+
+
+let counter3 = 6
+
+const countDown = function (){
+
+if(counter3 > 0 ){
+
+ counter3 =counter3 - 1
+  return counter3
+}else {
+  console.log ("count down is over")
+
+}
+
 }
 
