@@ -218,4 +218,98 @@ if(counter3 > 0 ){
 }
 
 }
+//Q5
+/*Write a function countUp that should do the opposite of countDown. With every invocation the count value should be incremented by one.
+
+const countUp = function () {
+  // TODO: Your code here
+};
+
+countUp(); // => 4
+countUp(); // => 5
+countUp(); // => 6
+countUp(); // => 7
+countUp(); // => 8
+*/
+
+let conter5 = 7
+const countUp = function (){
+
+  
+ 
+return ++conter5
+return conter5
+
+
+}
+//Q5 
+/*
+Write a function resetCount that accepts a number argument start and updates the count variable to equal the starting value and return a string implying that.
+
+const resetCount = function (start) {
+  // TODO: Your code here
+};
+
+resetCount(0); // => "the count has been reset"
+countUp(); // => 1
+resetCount(10); // => "the count has been reset"
+countUp(); // => 11
+
+*/
+const resetCount = function (start){
+
+let coun= start;
+console.log ( "the count has been reset")
+
+return ++coun;
+}
+//Q6
+/*Write a function addToList that accepts a string argument toDo and returns the current list as a string. Every time we invoke the function it should return the old toDo item plus the new one.
+
+const addToList = function (toDo) {
+  // TODO: Your code here
+};
+
+addToList("Eat"); // => 'Eat'
+addToList("Play"); // => 'Eat Play'
+addToList("Sleep"); // => 'Eat Play Sleep'
+addToList("repeat"); // => 'Eat Play Sleep repeat'*/
+
+
+let cc = "khaled"
+const addToList = function (toDo) {
+
+cc = toDo
+ 
+
+
+cc = cc + toDo
+
+return cc
+
+}
+//Q8
+/*
+Write a function deposit that accepts a number argument amount and returns the current account balance after depositing the amount.
+
+const deposit = function (amount) {
+  // TODO: Your code here
+};
+
+deposit(100); // => 100
+deposit(50); // => 150
+*/
+
+let  depositw= 100
+const deposit = function (amount){
+ console.log ( depositw)
+  console.log ("account balance after depositing the amount")
+  depositw = depositw + amount
+
+ 
+return depositw
+
+}
+
+
 
